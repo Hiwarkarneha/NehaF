@@ -1,32 +1,10 @@
+import java.io.IOException;
+import java.io.*;
 
-    interface Father {
+class Example1{
+    public static void main(String[] args) throws IOException {
 
-        float HT = 6.2f;
-        void Height();
+        StringBuffer sb = new StringBuffer("Hello");
+       System.out.println(sb);
     }
-
-    interface Mother {
-
-        float HT = 5.8f;
-        void Height();
-
-    }
-
-    class Child implements Father, Mother {
-        public void Height() {
-
-            Float ht = (Father.HT + Mother.HT) /2;
-            System.out.println("Child Height :" +ht);
-
-
-        }
-
-    }
-
-    class Multi {
-
-        public static void main(String[] args) {
-            Child ch = new Child();
-            ch.Height();
-        }
-    }
+}
