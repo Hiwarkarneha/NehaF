@@ -1,11 +1,19 @@
  class Pattern1 {
-   public static void main(String[] args) {
-      for(int row = 1; row<=4; row++){
-        System.out.print(row + "\t");
-      for(int col = 1; col<=4; col++){
+     public static void main(String[] args) {
+        
+    for(int row =2; row<=8; row++){
+        if (row%2==0){
+
+        
+             
+    for(int col =2; col<=8; col++){
+        if(col%2==0){
           System.out.print(col + "\t");
-      }
-      System.out.println("");
-      }
-   } 
- }
+        }
+           System.out.println();
+    }
+}
+    }
+
+}
+}
